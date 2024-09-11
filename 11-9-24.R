@@ -1,0 +1,26 @@
+vec1=c(1,2,3)
+vec1=NULL
+vec1
+?seq
+vec2=seq(1,5)
+v1=seq(1,100,length.out=5)
+v1
+v2=seq(length.out=4)
+v2
+sum(v2)
+v2[4]
+v1[c(2,4)]
+#factor
+data=c("M","F","F","F","M")
+f=factor(data)
+f
+f1=factor(data,levels=c("M","F","T"))
+f1
+f2=factor(data,levels=c("M","F","T"),labels=c("Male","Female","Transgender"))
+f2
+f3=factor(data,levels=c("M","F","T"),labels=c("Male","Female","Transgender"),ordered =TRUE)
+f3
+is.factor(f3)
+f3[4]
+f3[2]="Transgender"
+f3
