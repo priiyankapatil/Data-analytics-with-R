@@ -1,0 +1,71 @@
+add1<-function(a)
+{
+  a=10
+  b=20
+ print(a+b)
+}
+add1()
+add1()
+add1(5)
+add1(5,10)
+evenodd=function(a=25)
+{
+  if(a%%2==0){
+    return("even")
+  }
+  else{
+    return("odd")
+  }
+}
+evenodd(3)
+evenodd(10)
+evenodd()
+arearec=function(l=10,b=20)#giving default values
+{
+  return(l*b)
+}
+arearec()
+arearec(4,5)#default values will be overwritten
+#factorial
+n=as.integer(readline("Enter a number:"))
+i=1
+res=1
+while(i<=n)
+{
+  res=res*i
+  i=i+1
+}
+print(res)
+#divisible by 5
+five=function(a=6)
+{
+  if(a%%5==0){
+    return("divisible by 5")
+  }
+  else{
+    return("not divisible by 5")
+  }
+}
+five(10)
+names(methods:::.BasicFunsList)
+v1=c(4,6,3,7)
+v2=c(2,8,10,5)
+sum(v1+v2)
+max(v1)
+min(v2)
+mean(v1)
+median(v1)
+print(v1*v2)
+print(v1+10)
+vec1=c(4,6,10,14)
+vec2=c(2,8)
+vec1+vec2
+vec1-vec2
+vec1*vec2
+vec1/vec2
+vec=c(1+2,4-1,3,7+3)==3
+vec
+search()
+install.packages("tidyverse")
+library(tidyverse)
+installed.packages()
